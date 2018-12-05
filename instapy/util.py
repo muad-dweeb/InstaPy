@@ -1068,8 +1068,7 @@ def highlight_print(username=None, message=None, priority=None, level=None,
         lower_char = None
 
     if show_logs is True:
-        print("\n{}".format(
-            upper_char * int(ceil(output_len / len(upper_char)))))
+        print("\n{}".format(upper_char * int(ceil(output_len / len(upper_char)))))
 
     if level == "info":
         logger.info(message)
