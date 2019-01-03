@@ -21,6 +21,11 @@ from contextlib import contextmanager
 from copy import deepcopy
 import unicodedata
 
+# resolve unicode character issues
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 # import InstaPy modules
 from .clarifai_util import check_image
 from .comment_util import comment_image
